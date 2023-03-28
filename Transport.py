@@ -1,4 +1,4 @@
-class Transport:      # обязательно здесь ставить скобки?
+class Transport:      # не ставим скобки, т.к. это главный класс
     '''transport description'''         # Transport.__doc__
     max_speed = None
     year = None
@@ -20,6 +20,9 @@ class Transport:      # обязательно здесь ставить ско�
 class Airplane(Transport):
     type_of_airplane = None
     flight_altitude = None
+
+    def __lt__(self, other):
+        return self.flight_altitude < other
 
     def __str__(self) -> str:
         return "Airplane"
@@ -60,7 +63,9 @@ class car(Transport):
 
 
 airplane1 = Airplane('Airplane', 'Passenger', 10000, 450, 2005)
-airplane2 = Airplane('Airplane', 'Passenger', 10000, 450, 2005)
+airplane2 = Airplane('Airplane', 'Passenger', 8000, 450, 2005)
+
+print(airplane2.flight_altitude < airplane1.flight_altitude)
 
 # print(airplane1)
 # airplane.get_info()     # delete if we want print only new height

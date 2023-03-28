@@ -71,5 +71,7 @@ print(airplane2.flight_altitude < airplane1.flight_altitude)
 # airplane.get_info()     # delete if we want print only new height
 # car = car('Car', 'BMW', 'four-wheel drive', 250, 2020)
 # car.get_info()
-# airplane1.change_height(-3000)    # difference between altitudes
+airplane1.change_height(-3000)    # difference between altitudes
 # print(airplane.change_height.__doc__)   # print docstring
+
+print(airplane2.flight_altitude < airplane1.flight_altitude)

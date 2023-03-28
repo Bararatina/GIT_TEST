@@ -21,6 +21,9 @@ class Airplane(Transport):
     type_of_airplane = None
     flight_altitude = None
 
+    def __str__(self) -> str:
+        return "Airplane"
+
     def __init__(self, type, type_of_airplane, flight_altitude,
                  max_speed, year):
         super().__init__(type, max_speed, year)

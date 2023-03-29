@@ -74,4 +74,4 @@ print(airplane2.flight_altitude < airplane1.flight_altitude)
 airplane1.change_height(-3000)    # difference between altitudes
 # print(airplane.change_height.__doc__)   # print docstring
 
-print(airplane2.flight_altitude < airplane1.flight_altitude)
+# print(airplane2.flight_altitude < airplane1.flight_altitude)
